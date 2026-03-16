@@ -15,7 +15,7 @@
         "execute": {
            "inArguments":[],
           "outArguments": [],
-          "url": "//HERE GOES THE NODEJS APP URL", 
+          "url": "https://customactivityok.onrender.com/jb/execute", 
            "verb": "POST",
             "body": "",
             "header": "",
@@ -30,17 +30,17 @@
     "configurationArguments": {
         "applicationExtensionKey": "52a47946-1301-44ce-93bc-31126b1d2e13",
       "save": {
-        "url": "//HERE GOES THE NODEJS APP URL",
+        "url": "https://customactivityok.onrender.com/jb/save",
         "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "//HERE GOES THE NODEJS APP URL",
+        "url": "https://customactivityok.onrender.com/jb/publish",
         "verb": "POST",
         "useJwt": true
        },
       "validate": {
-        "url": "//HERE GOES THE NODEJS APP URL",
+        "url": "https://customactivityok.onrender.com/jb/validate",
         "verb": "POST",
         "useJwt": true
       }
