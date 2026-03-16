@@ -68,6 +68,7 @@ define([
             $('#' + key).val(value);
         });
 
+        removeLoader('#loader-wrap');
         connection.trigger('requestTokens');
         connection.on('requestedTokens', function(tokens) {
             if (tokens) { 
