@@ -28,8 +28,6 @@ router.post('/execute', async (req, res) => {
 });
 
 router.post('/getFormPicklist', async (req, res) => {
-    console.log('reqqqqqqq: ', req);
-    console.log('reqqqqqqq: ', req.body);
     let getPicklist = await getFormPicklist(req.body);
     res.send(JSON.stringify(getPicklist));
 });

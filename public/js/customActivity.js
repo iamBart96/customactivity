@@ -81,32 +81,33 @@ define([
                     let payloadPush = res.data;
 
                     let selectClusterHTML = '';
-                    if(payloadPush.length > 0){
-                        payloadPush.forEach(item => {
-                            if(item.picklist == 'Cluster'){
-                                if (inArguments && inArguments[0]) {
-                                    selectClusterHTML += '<option value="' + item.value + '"' + (inArguments[0].Msg_Cluster == item.value ? ' selected' : '') + '>' + item.label + '</option>';
-                                }else{
-                                    selectClusterHTML += '<option value="' + item.value + '">' + item.label + '</option>';
-                                }
-                                
-                            }
-                        });
+                    
+                    //if(payloadPush.length > 0){
+                    //    payloadPush.forEach(item => {
+                    //        if(item.picklist == 'Cluster'){
+                    //            if (inArguments && inArguments[0]) {
+                    //                selectClusterHTML += '<option value="' + item.value + '"' + (inArguments[0].Msg_Cluster == item.value ? ' selected' : '') + '>' + item.label + '</option>';
+                    //            }else{
+                    //                selectClusterHTML += '<option value="' + item.value + '">' + item.label + '</option>';
+                    //            }
+                    //            
+                    //        }
+                    //    });
 
-                        if(selectClusterHTML != ''){
-                            $('#Msg_Cluster').html(selectClusterHTML);
-                        }else{
-                            $('#Msg_Cluster').prop('disabled', true);
-                            $('#no-cluster-found').html('Add at least one item to proceed with the configuration.');
-                        }
-                        
-                        removeLoader('#loader-wrap');
-
-                    }else{
-                        $('#Msg_Cluster').prop('disabled', true); /* Da aggiungere #Msg_Template se necessaria la riattivazione */
-                        $('#no-template-found, #no-cluster-found').html('Add at least one item to proceed with the configuration.');
-                        removeLoader('#loader-wrap');
-                    }
+                    //    if(selectClusterHTML != ''){
+                    //        $('#Msg_Cluster').html(selectClusterHTML);
+                    //    }else{
+                    //        $('#Msg_Cluster').prop('disabled', true);
+                    //        $('#no-cluster-found').html('Add at least one item to proceed with the configuration.');
+                    //    }
+                    //    
+                    //    removeLoader('#loader-wrap');
+//
+                    //}else{
+                    //    $('#Msg_Cluster').prop('disabled', true); /* Da aggiungere #Msg_Template se necessaria la riattivazione */
+                    //    $('#no-template-found, #no-cluster-found').html('Add at least one item to proceed with the configuration.');
+                    //    removeLoader('#loader-wrap');
+                    //}
 
                 })
                 .catch(function(e) {
