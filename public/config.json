@@ -1,14 +1,14 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-        "icon": "images/icare-icon.png",
+        "icon": "images/dash-icon.png",
         "category": "custom"
     },
     "type": "REST",
     "lang": {
         "en-US": {
             "name": "Custom Activity Example",
-          "description": "Lorem ipsum"
+            "description": "Lorem ipsum"
         }
     },
     "arguments": {
