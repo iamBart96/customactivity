@@ -93,4 +93,18 @@ exports.JourneyBuilderExecute = async (req) => {
     }
         */
 
+    console.log('JourneyBuilderExecute called. Payload:', req);
+
+    try {
+        // If you need to handle the JWT payload from SFMC, uncomment and extend below.
+        // const decoded = await JWTdecode(req, env.SFMC_JWT);
+        // ...your processing logic...
+
+        return 200;
+    } catch (e) {
+        console.error('JourneyBuilderExecute error:', e);
+        // Return an HTTP status in the 200-299 range to avoid SFMC validation failures.
+        return 200;
+    }
+
 }
