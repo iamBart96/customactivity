@@ -40,7 +40,7 @@
         "useJwt": true
        },
       "validate": {
-        "url": "https://customactivityok.onrender.com/jb/validate",
+        "url": "https://eoby7n74x6vsyda.m.pipedream.net",
         "verb": "POST",
         "useJwt": true
       }
