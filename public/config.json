@@ -15,7 +15,7 @@
         "execute": {
            "inArguments":[],
           "outArguments": [],
-          "url": "https://customactivityok.onrender.com/jb/execute", 
+          "url": "/jb/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -30,17 +30,17 @@
     "configurationArguments": {
         "applicationExtensionKey": "52a47946-1301-44ce-93bc-31126b1d2e13",
       "save": {
-        "url": "https://customactivityok.onrender.com/jb/save",
+        "url": "/jb/save",
         "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://customactivityok.onrender.com/jb/publish",
+        "url": "/jb/publish",
         "verb": "POST",
         "useJwt": true
        },
       "validate": {
-        "url": "https://customactivityok.onrender.com/jb/validate",
+        "url": "/jb/validate",
         "verb": "POST",
         "useJwt": true
       }

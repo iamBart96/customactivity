@@ -32,6 +32,13 @@ app.get('/', async (req, res) => {
 const JbRoutes = require('./routes/index');
 app.use('/jb', JbRoutes);
 
+// Catch-all logging for any requests that dont match an existing route.
+// This helps identify which endpoint SFMC is attempting to call.
+app.use((req, res) => {
+    console.log('UNMATCHED REQUEST', req.method, req.originalUrl, 'content-type:', req.headers['content-type']);
+    res.sendStatus(200);
+});
+
 
 app.listen(env.PORT, () => {
     console.log("Server listening on port: " + env.PORT);
