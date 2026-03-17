@@ -8,7 +8,8 @@ exports.JourneyBuilderSave = async () => {
     return 200;
 }
 
-exports.JourneyBuilderValidate = async () => {
+exports.JourneyBuilderValidate = async (req) => {
+    console.log('***** BR JourneyBuilderValidate called. Payload:', req);
     return 200;
 }
 
