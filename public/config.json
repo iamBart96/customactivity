@@ -29,11 +29,11 @@
     },
     "configurationArguments": {
         "applicationExtensionKey": "87bd6399-0cc7-40e4-bc6a-3e0171cb5643",
-      "save": {
-        "url": "https://customactivityok.onrender.com/jb/save",
-        "verb": "POST",
-        "useJwt": true
-       },
+        "save": {
+            "url": "https://customactivityok.onrender.com/jb/save",
+            "verb": "POST",
+            "useJwt": true
+        },
        "publish": {
         "url": "https://customactivityok.onrender.com/jb/publish",
         "verb": "POST",
