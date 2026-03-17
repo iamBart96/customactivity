@@ -199,21 +199,6 @@ define([
                     Title.classList.remove('is-invalid');
                 }
 
-                var Short = form.querySelector('#Msg_Short');
-                var ShortFeedback = form.querySelector('#Msg_Short + .invalid-feedback');
-                if (Short.value.length > 200) {
-                    ShortFeedback.textContent = 'Short message must be no longer than 200 characters.';
-                    Short.classList.add('is-invalid');
-                    isValid = false;
-                } else if (Short.value.length === 0) {
-                    ShortFeedback.textContent = 'This field is required.';
-                    Short.classList.add('is-invalid');
-                    isValid = false;
-                } else {
-                    ShortFeedback.textContent = '';
-                    Short.classList.remove('is-invalid');
-                }
-
                 var Long = form.querySelector('#Msg_Long');
                 var LongFeedback = form.querySelector('#Msg_Long + .invalid-feedback');
                 if (Long.value.length > 1000) {
