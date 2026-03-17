@@ -21,7 +21,7 @@ exports.JourneyBuilderExecute = async (req) => {
 
     console.log('^^^^^^^^^ request', req);
 
-    /*
+    
     try{
         const decoded = await JWTdecode(req, env.SFMC_JWT);
 
@@ -92,7 +92,7 @@ exports.JourneyBuilderExecute = async (req) => {
         console.error(e);
         return 500;
     }
-        */
+        
 
     console.log('JourneyBuilderExecute called. Payload:', req);
 
