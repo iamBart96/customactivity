@@ -12,6 +12,12 @@ app.use(express.json());
 
 app.use(bodyParser.raw({type: 'application/jwt'}));
 
+// Log every incoming request (helps diagnose which endpoints SFMC actually calls)
+app.use((req, res, next) => {
+    console.log(`REQUEST ${req.method} ${req.originalUrl} content-type:${req.headers['content-type']}`);
+    next();
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
